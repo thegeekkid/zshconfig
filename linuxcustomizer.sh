@@ -17,3 +17,6 @@ if [ -f /etc/debian_version ]; then
 fi
 cp terminalparty.zsh-theme ~/.oh-my-zsh/themes/terminalparty.zsh-theme
 cp zshrc ~/.zshrc
+chsh -s /bin/zsh
+clear
+echo Linux has been configured!  Please restart the shell to reflect all changes.
