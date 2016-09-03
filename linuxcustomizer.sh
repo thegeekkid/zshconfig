@@ -12,12 +12,8 @@ mkdir /bs
 cd /bs
 git clone https://github.com/thegeekkid/zshconfig.git
 cd zshconfig
-if [ $1 = "debian" ]; then
+if [ -f /etc/debian_version ]; then
   git checkout debian
-else
-  if [ $1 = "teamproject" ]; then
-    git checkout teamproject
-  fi
 fi
 cp terminalparty.zsh-theme ~/.oh-my-zsh/themes/terminalparty.zsh-theme
 cp zshrc ~/.zshrc
