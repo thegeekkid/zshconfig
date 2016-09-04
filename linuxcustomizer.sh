@@ -3,7 +3,7 @@
 # Base System Install/Update
 apt-get update
 apt-get -y upgrade
-apt-get -y curl git vim zsh
+apt-get install -y curl git vim zsh
 
 # Customization
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
