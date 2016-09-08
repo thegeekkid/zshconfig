@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Usage: bash <(curl -s https://raw.githubusercontent.com/thegeekkid/zshconfig/master/linuxcustomizer.sh)
+
 # Base System Install/Update
 apt-get update
 apt-get -y upgrade
